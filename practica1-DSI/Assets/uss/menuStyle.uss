@@ -45,3 +45,40 @@
     border-bottom-width: 3px;
     width: 50%;
 }
+
+.nameText {
+    -unity-text-align: upper-center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font-style: bold;
+    color: rgb(165, 217, 246);
+    -unity-text-outline-color: rgb(9, 11, 63);
+    -unity-text-outline-width: 0.5px;
+    letter-spacing: 5px;
+    word-spacing: 0;
+}
+
+.titleText {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font-style: italic;
+    font-size: 10px;
+    -unity-text-align: lower-center;
+    color: rgb(9, 11, 63);
+    -unity-text-outline-width: 0.5px;
+    -unity-text-outline-color: rgb(9, 11, 63);
+    letter-spacing: 55px;
+    word-spacing: 60px;
+}
