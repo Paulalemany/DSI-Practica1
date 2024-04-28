@@ -82,3 +82,19 @@
     letter-spacing: 55px;
     word-spacing: 60px;
 }
+
+.elegido {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 1px;
+}
+
+.yess {
+    flex-grow: 1;
+    background-color: rgba(193, 251, 214, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 1px;
+    scale: 1.1 1.1;
+    rotate: 15deg;
+}
