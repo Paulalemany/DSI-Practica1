@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 242946496}
   - component: {fileID: 242946495}
   - component: {fileID: 242946497}
+  - component: {fileID: 242946498}
   m_Layer: 5
   m_Name: GRWB
   m_TagString: Untagged
@@ -182,6 +183,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b19cd4f48bf210f40b7c356e29310fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &242946498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242946494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63cb9c87d9d60d142b100598bf65254d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &697963090

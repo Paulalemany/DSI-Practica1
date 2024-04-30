@@ -3,9 +3,9 @@
     <ui:VisualElement name="Contenedor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; position: relative;">
         <ui:VisualElement name="ChooseBibble" class="fondo" style="width: 33.33%;">
             <ui:VisualElement name="Titulo" class="titulo" style="flex-grow: 1; background-color: rgb(165, 217, 246); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); position: relative; width: 100%; height: 25%; translate: 0 0; scale: 1 1; flex-wrap: nowrap; flex-direction: column;">
-                <ui:Label tabindex="-1" text="Get Ready With" display-tooltip-when-elided="true" class="titleText" style="margin-top: 2px;" />
+                <ui:Label tabindex="-1" text="Get Ready With" display-tooltip-when-elided="true" name="Ready" class="titleText" style="margin-top: 2px;" />
                 <ui:VisualElement style="flex-grow: 1; background-color: rgb(165, 217, 246); height: 70%; background-image: resource(&apos;images/logo DSI&apos;); -unity-background-image-tint-color: rgb(219, 198, 214);" />
-                <ui:Label tabindex="-1" text="Elige una Bibble" display-tooltip-when-elided="true" class="titleText" />
+                <ui:Label tabindex="-1" text="Elige una Bibble" display-tooltip-when-elided="true" name="Bibble" class="titleText" />
             </ui:VisualElement>
             <ui:VisualElement name="Espacio" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 75%;">
                 <ui:VisualElement name="cyn_pau" class="eleccion" style="margin-bottom: 0; flex-direction: row;">
