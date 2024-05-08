@@ -15,7 +15,7 @@ public class ChooseClothes : MonoBehaviour
         //Cogemos los padres de los elementos que vamos a modificar
         VisualElement _DressBibble = root.Q("DressBibble");
         VisualElement _Caja1 = root.Q("Caja1");
-        VisualElement _Caja2 = root.Q("Caja2");
+        VisualElement _Caja2 = root.Q("Caja3");
 
         //Añadimos los manipuladores
         _Caja1.AddManipulator(new Resizer());
@@ -28,19 +28,36 @@ public class ChooseClothes : MonoBehaviour
         lC1.ForEach(c => c.AddManipulator(new Resizer()));
         lC2.ForEach(c => c.AddManipulator(new Resizer()));
 
+        #region MouseEnter
         _Caja1.RegisterCallback<MouseEnterEvent>(
-
-            ev => 
+            ev =>
             {
-                Debug.Log("Está encima");
+                (ev.target as VisualElement).transform.scale = new Vector3(1.1f, 1.1f);
 
-                //Cambia color al clic izdo
-                (ev.target as VisualElement).style.backgroundColor = Color.green;
+            }, TrickleDown.TrickleDown);
 
-            }, TrickleDown.TrickleDown) ;
+        _Caja2.RegisterCallback<MouseEnterEvent>(
+            ev =>
+            {
+                (ev.target as VisualElement).transform.scale = new Vector3(1.1f, 1.1f);
+            }, TrickleDown.TrickleDown);
+        #endregion
 
+
+        #region MouseLeave
         _Caja1.RegisterCallback<MouseLeaveEvent>(
-            ev => Debug.Log("Fuera")
-            );
+            ev =>
+            {
+                (ev.target as VisualElement).transform.scale = new Vector3(1, 1);
+
+            }, TrickleDown.TrickleDown);
+
+        _Caja2.RegisterCallback<MouseLeaveEvent>(
+            ev =>
+            {
+                (ev.target as VisualElement).transform.scale = new Vector3(1, 1);
+            }, TrickleDown.TrickleDown);
+        #endregion
+
     }
 }
