@@ -98,3 +98,84 @@
     scale: 1.1 1.1;
     rotate: 15deg;
 }
+
+.foto:hover {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: resource('images/83652f8d-3fba-4a36-b741-e645fda4e866');
+    -unity-background-scale-mode: scale-and-crop;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left-color: rgb(92, 145, 209);
+    border-right-color: rgb(92, 145, 209);
+    border-top-color: rgb(92, 145, 209);
+    border-bottom-color: rgb(92, 145, 209);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    width: 50%;
+    scale: 1.1 1.1;
+    rotate: 15deg;
+}
+
+.button {
+    left: 5%;
+    top: 93%;
+    right: auto;
+    bottom: auto;
+    width: 90%;
+    background-color: rgb(252, 229, 247);
+    border-left-color: rgb(9, 11, 63);
+    border-right-color: rgb(9, 11, 63);
+    border-top-color: rgb(9, 11, 63);
+    border-bottom-color: rgb(9, 11, 63);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: flex;
+    overflow: visible;
+    position: absolute;
+    align-items: center;
+    height: 26px;
+    -unity-text-align: middle-center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.button:hover {
+    left: 5%;
+    top: 93%;
+    right: auto;
+    bottom: auto;
+    width: 90%;
+    background-color: rgb(213, 202, 229);
+    border-left-color: rgb(9, 11, 63);
+    border-right-color: rgb(9, 11, 63);
+    border-top-color: rgb(9, 11, 63);
+    border-bottom-color: rgb(9, 11, 63);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: flex;
+    overflow: visible;
+    position: absolute;
+    align-items: center;
+    height: 26px;
+    -unity-text-align: middle-center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    scale: 1.1 1.1;
+    rotate: 1deg;
+}
+
+.personaje {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    height: 33.33%;
+}

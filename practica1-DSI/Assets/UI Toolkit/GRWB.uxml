@@ -9,18 +9,18 @@
             </ui:VisualElement>
             <ui:VisualElement name="Espacio" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 75%;">
                 <ui:VisualElement name="cyn_pau" class="eleccion" style="margin-bottom: 0; flex-direction: row;">
-                    <ui:VisualElement name="cynthia" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/8cac8e1b-801c-4af6-a9ec-8ea236eedf88&apos;); height: auto; width: 50%; display: flex; -unity-background-scale-mode: scale-and-crop; margin-right: 2.5px; margin-bottom: 2.5px; flex-direction: column-reverse;">
+                    <ui:VisualElement name="cynthia" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/cynthia&apos;); height: auto; width: 50%; display: flex; -unity-background-scale-mode: scale-and-crop; margin-right: 2.5px; margin-bottom: 2.5px; flex-direction: column-reverse;">
                         <ui:Label tabindex="-1" text="Cynthia" display-tooltip-when-elided="true" name="cyn_text" class="nameText" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="yo" class="foto" style="background-image: resource(&apos;images/83652f8d-3fba-4a36-b741-e645fda4e866&apos;); margin-left: 2.5px; margin-bottom: 2.5px; flex-direction: column-reverse;">
+                    <ui:VisualElement name="yo" class="foto" style="background-image: resource(&apos;images/yo&apos;); margin-left: 2.5px; margin-bottom: 2.5px; flex-direction: column-reverse;">
                         <ui:Label tabindex="-1" text="Paula" display-tooltip-when-elided="true" class="nameText" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="nieves_andreh" class="eleccion" style="flex-grow: 1; background-color: rgb(252, 229, 247); margin-top: 0; flex-direction: row;">
-                    <ui:VisualElement name="nieves" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/e8e0e0f5-1401-42cd-8338-30d3e8930398.JPG?fileID=2800000&amp;guid=d9c6d636810f7b24ea7e2f2bd9c50e13&amp;type=3#e8e0e0f5-1401-42cd-8338-30d3e8930398&apos;); -unity-background-scale-mode: scale-and-crop; flex-direction: column-reverse; align-items: center; flex-wrap: nowrap; display: flex; margin-right: 2.5px; margin-top: 2.5px;">
+                    <ui:VisualElement name="nieves" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/nieves.JPG?fileID=2800000&amp;guid=d9c6d636810f7b24ea7e2f2bd9c50e13&amp;type=3#nieves&apos;); -unity-background-scale-mode: scale-and-crop; flex-direction: column-reverse; align-items: center; flex-wrap: nowrap; display: flex; margin-right: 2.5px; margin-top: 2.5px;">
                         <ui:Label tabindex="-1" text="Nieves" display-tooltip-when-elided="true" class="nameText" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="andres" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/64665d13-08f3-4f82-a5d5-b1844acc051e.JPG?fileID=2800000&amp;guid=bf823158afdb22949b3b4eeac40c1355&amp;type=3#64665d13-08f3-4f82-a5d5-b1844acc051e&apos;); display: flex; overflow: visible; visibility: visible; margin-left: 2.5px; margin-top: 2.5px; flex-direction: column-reverse;">
+                    <ui:VisualElement name="andres" class="foto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/andres.JPG?fileID=2800000&amp;guid=bf823158afdb22949b3b4eeac40c1355&amp;type=3#andres&apos;); display: flex; overflow: visible; visibility: visible; margin-left: 2.5px; margin-top: 2.5px; flex-direction: column-reverse;">
                         <ui:Label tabindex="-1" text="Andrés" display-tooltip-when-elided="true" class="nameText" />
                     </ui:VisualElement>
                 </ui:VisualElement>
@@ -34,7 +34,10 @@
                 <ui:VisualElement name="prenda4" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Botas&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
                 <ui:VisualElement name="prenda5" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Botines&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
             </ui:VisualElement>
-            <ui:VisualElement name="Caja2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%; background-image: resource(&apos;images/Ropa/andresvestir&apos;); -unity-background-scale-mode: stretch-to-fill; margin-top: 5px; margin-bottom: 5px; overflow: hidden; visibility: visible;" />
+            <ui:VisualElement name="Caja2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%; background-image: resource(&apos;images/Ropa/andresvestir&apos;); -unity-background-scale-mode: stretch-to-fill; margin-top: 5px; margin-bottom: 5px; overflow: hidden; visibility: visible;">
+                <ui:VisualElement name="Foto" class="personaje" />
+                <ui:VisualElement name="vacio" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 50%;" />
+            </ui:VisualElement>
             <ui:VisualElement name="Caja3" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%;">
                 <ui:VisualElement name="prenda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Sombrero&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
                 <ui:VisualElement name="prenda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Falda&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
@@ -43,11 +46,14 @@
                 <ui:VisualElement name="prenda" class="elegido" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/zapatos&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
             </ui:VisualElement>
             <ui:VisualElement name="dressAndres" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/andresvestir.png?fileID=2800000&amp;guid=bffae7f1525342f44b2a71bd2514fe0e&amp;type=3#andresvestir&apos;); display: none; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: auto; width: 100%; height: 100%; -unity-background-scale-mode: stretch-to-fill;" />
-            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuarButton" class="buttonStyle titleText" style="left: 5%; top: 93%; right: auto; bottom: auto; width: 90%; background-color: rgb(252, 229, 247); border-left-color: rgb(9, 11, 63); border-right-color: rgb(9, 11, 63); border-top-color: rgb(9, 11, 63); border-bottom-color: rgb(9, 11, 63); border-top-left-radius: 18px; border-bottom-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; display: flex; overflow: visible; position: absolute; align-items: center; height: 26px; -unity-text-align: middle-center; flex-wrap: nowrap; flex-direction: column;" />
+            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuarButton" class="buttonStyle titleText button" />
         </ui:VisualElement>
         <ui:VisualElement name="DressedBibble" class="fondo" style="flex-grow: 1; position: relative; left: auto; top: auto; right: auto; bottom: auto; background-image: none; display: flex; width: 33.33%; align-items: center; flex-direction: column-reverse;">
-            <ui:VisualElement name="dressedAndreh" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/andresvestido&apos;); width: 100%; height: 100%;" />
-            <ui:Button text="Guardar" display-tooltip-when-elided="true" name="guardarButton" class="buttonStyle titleText" style="display: flex; overflow: visible; visibility: visible; width: 191px; height: 26px; position: absolute; -unity-text-align: middle-center; background-color: rgb(252, 229, 247); border-left-color: rgb(9, 11, 63); border-right-color: rgb(9, 11, 63); border-top-color: rgb(9, 11, 63); border-bottom-color: rgb(9, 11, 63); border-top-left-radius: 18px; border-bottom-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px;" />
+            <ui:VisualElement name="dressedAndreh" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/andresvestido&apos;); width: 100%; height: 100%;">
+                <ui:VisualElement name="Foto" class="personaje" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 33.33%; -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="vacio" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 50%;" />
+            </ui:VisualElement>
+            <ui:Button text="Guardar" display-tooltip-when-elided="true" name="guardarButton" class="buttonStyle titleText button" style="display: flex; overflow: visible; visibility: visible; width: 191px; height: 26px; position: absolute; -unity-text-align: middle-center; background-color: rgb(252, 229, 247); border-left-color: rgb(9, 11, 63); border-right-color: rgb(9, 11, 63); border-top-color: rgb(9, 11, 63); border-bottom-color: rgb(9, 11, 63); border-top-left-radius: 18px; border-bottom-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; top: 93%; left: 20%;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
