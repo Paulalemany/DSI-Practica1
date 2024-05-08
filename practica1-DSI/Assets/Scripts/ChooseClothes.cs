@@ -28,36 +28,42 @@ public class ChooseClothes : MonoBehaviour
         lC1.ForEach(c => c.AddManipulator(new Resizer()));
         lC2.ForEach(c => c.AddManipulator(new Resizer()));
 
-        #region MouseEnter
-        _Caja1.RegisterCallback<MouseEnterEvent>(
+        for (int i = 0; i < lC1.Count; i++)
+        {
+            VisualElement c = lC1[i];
+            c.RegisterCallback<MouseEnterEvent>(
             ev =>
             {
                 (ev.target as VisualElement).transform.scale = new Vector3(1.1f, 1.1f);
 
             }, TrickleDown.TrickleDown);
 
-        _Caja2.RegisterCallback<MouseEnterEvent>(
+            c.RegisterCallback<MouseLeaveEvent>(
+            ev =>
+            {
+                (ev.target as VisualElement).transform.scale = new Vector3(1, 1);
+
+            }, TrickleDown.TrickleDown);
+
+        }
+
+        for (int i = 0; i < lC2.Count; i++)
+        {
+            VisualElement c = lC2[i];
+            c.RegisterCallback<MouseEnterEvent>(
             ev =>
             {
                 (ev.target as VisualElement).transform.scale = new Vector3(1.1f, 1.1f);
+
             }, TrickleDown.TrickleDown);
-        #endregion
 
-
-        #region MouseLeave
-        _Caja1.RegisterCallback<MouseLeaveEvent>(
+            c.RegisterCallback<MouseLeaveEvent>(
             ev =>
             {
                 (ev.target as VisualElement).transform.scale = new Vector3(1, 1);
 
             }, TrickleDown.TrickleDown);
-
-        _Caja2.RegisterCallback<MouseLeaveEvent>(
-            ev =>
-            {
-                (ev.target as VisualElement).transform.scale = new Vector3(1, 1);
-            }, TrickleDown.TrickleDown);
-        #endregion
+        }
 
     }
 }
