@@ -96,7 +96,7 @@
     -unity-background-scale-mode: scale-to-fit;
     margin-left: 1px;
     scale: 1.1 1.1;
-    rotate: 15deg;
+    rotate: 64deg;
 }
 
 .foto:hover {
@@ -178,4 +178,36 @@
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0);
     height: 33.33%;
+}
+
+.cabeza {
+    background-image: resource('images/Ropa/Diadema');
+}
+
+.top {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: resource('images/Ropa/Sudadera');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 1px;
+}
+
+.vestido {
+    background-image: resource('images/Ropa/Vestido');
+}
+
+.zapatos {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: resource('images/Ropa/Botas');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 1px;
+}
+
+.falda {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: resource('images/Ropa/Falda');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 1px;
 }

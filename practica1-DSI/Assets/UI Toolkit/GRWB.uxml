@@ -28,22 +28,28 @@
         </ui:VisualElement>
         <ui:VisualElement name="DressBibble" class="fondo" style="flex-grow: 1; top: auto; left: auto; position: relative; right: auto; bottom: auto; align-items: center; opacity: 1; display: flex; visibility: visible; overflow: visible; width: 33.33%; flex-direction: row;">
             <ui:VisualElement name="Caja1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: stretch; width: 33.33%; height: 100%;">
-                <ui:VisualElement name="prenda1" class="elegido" style="background-image: resource(&apos;images/Ropa/Diadema&apos;);" />
-                <ui:VisualElement name="prenda2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Sudadera&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
-                <ui:VisualElement name="prenda3" class="elegido" style="background-image: resource(&apos;images/Ropa/Vestido&apos;);" />
-                <ui:VisualElement name="prenda4" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Botas&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
-                <ui:VisualElement name="prenda5" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Botines&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
+                <ui:VisualElement name="Diadema" class="elegido cabeza" />
+                <ui:VisualElement name="Sudadera" class="top" />
+                <ui:VisualElement name="Vestido" class="elegido vestido" />
+                <ui:VisualElement name="Botas" class="zapatos" />
+                <ui:VisualElement name="Botines" class="zapatos" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Botines&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 1px;" />
             </ui:VisualElement>
-            <ui:VisualElement name="Caja2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%; background-image: resource(&apos;images/Ropa/andresvestir&apos;); -unity-background-scale-mode: stretch-to-fill; margin-top: 5px; margin-bottom: 5px; overflow: hidden; visibility: visible;">
-                <ui:VisualElement name="Foto" class="personaje" />
-                <ui:VisualElement name="vacio" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 50%;" />
+            <ui:VisualElement name="Caja2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%; background-image: resource(&apos;images/Ropa/andresvestir&apos;); -unity-background-scale-mode: stretch-to-fill; margin-top: 5px; margin-bottom: 5px; overflow: visible; visibility: visible;">
+                <ui:VisualElement name="Foto" class="personaje" style="position: absolute; width: 100%; height: 42%;" />
+                <ui:VisualElement name="cabeza" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 25%;" />
+                <ui:VisualElement name="hueco" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 28%;" />
+                <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 55%; -unity-background-scale-mode: stretch-to-fill; top: -10px;">
+                    <ui:VisualElement name="arriba" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); top: -17px;" />
+                    <ui:VisualElement name="abajo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="zapatos" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 20%; scale: 0.7 1;" />
             </ui:VisualElement>
             <ui:VisualElement name="Caja3" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 33.33%; height: 100%;">
-                <ui:VisualElement name="prenda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Sombrero&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
-                <ui:VisualElement name="prenda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Falda&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
-                <ui:VisualElement name="prenda" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Idol&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
-                <ui:VisualElement name="prenda" class="elegido" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/CalcetinesCoquette´&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
-                <ui:VisualElement name="prenda" class="elegido" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/zapatos&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
+                <ui:VisualElement name="Sombrero" class="cabeza" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Sombrero&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
+                <ui:VisualElement name="Falda" class="falda" />
+                <ui:VisualElement name="Idol" class="vestido" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/Idol&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
+                <ui:VisualElement name="CalcetinesCoquette" class="elegido zapatos" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/CalcetinesCoquette&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
+                <ui:VisualElement name="zapatos" class="elegido zapatos" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;images/Ropa/zapatos&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 1px;" />
             </ui:VisualElement>
             <ui:VisualElement name="dressAndres" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Resources/images/andresvestir.png?fileID=2800000&amp;guid=bffae7f1525342f44b2a71bd2514fe0e&amp;type=3#andresvestir&apos;); display: none; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: auto; width: 100%; height: 100%; -unity-background-scale-mode: stretch-to-fill;" />
             <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuarButton" class="buttonStyle titleText button" />

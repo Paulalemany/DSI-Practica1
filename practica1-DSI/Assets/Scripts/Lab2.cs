@@ -10,11 +10,13 @@ public class Lab2 : MonoBehaviour
         UIDocument document = GetComponent<UIDocument>();
         VisualElement rootve = document.rootVisualElement;
 
-        List<VisualElement> lista_ve = rootve.Query(className: "personaje").ToList();
+        List<VisualElement> lista_ve = rootve.Query(className: "elegido").ToList();
 
         foreach (var item in lista_ve)
         {
             item.AddToClassList("yess");
         }
+
+        
     }
 }
